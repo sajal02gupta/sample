@@ -1,0 +1,17 @@
+<div class="container">
+    <form (ngSubmit)="createBook()" class="col-md-6">
+        <div class="form-group">
+            <label for="my-input">Title</label>
+            <input type="text" class="form-control" placeholder="Book title" name="title" [(ngModel)]="title">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Author</label>
+            <input type="text" class="form-control" placeholder="Author name" name="author" [(ngModel)]="author">
+        </div>
+        <div class="form-group">
+            <label for="my-input">Price</label>
+            <input type="text" class="form-control" placeholder="Cost of the book" name="price" [(ngModel)]="price">
+        </div>
+        <button class="btn btn-primary" type="submit">Add book</button>
+    </form>
+</div>
